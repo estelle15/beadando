@@ -5,7 +5,7 @@ def lcs(first, second, x, y):
 	elif first[x-1] == second[y-1]:
 	    return 1 + lcs(first, second, x-1, y-1);
 	else:
-	    return max(lcs(first, second, x, y-1), lcs(fisrt, second, x-1, y));
+	    return max(lcs(first, second, x, y-1), lcs(first, second, x-1, y));
 
 
 first = "FGHJKAERT"
