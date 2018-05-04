@@ -1,13 +1,13 @@
-def longest_common(elso, masodik, x, y):
+def lcs(first, second, x, y):
 
 	if x == 0 or y == 0:
 	    return 0;
-	elif elso[x-1] == masodik[y-1]:
-	    return 1 + longest_common(elso, masodik, x-1, y-1);
+	elif first[x-1] == second[y-1]:
+	    return 1 + lcs(first, second, x-1, y-1);
 	else:
-	    return max(longest_common(elso, masodik, x, y-1), longest_common(elso, masodik, x-1, y));
+	    return max(lcs(first, second, x, y-1), lcs(fisrt, second, x-1, y));
 
 
-elso = "FGHJKAERT"
-masodik= "HJKEORPD"
-print "Length of LCS is ", longest_common(elso , masodik, len(elso), len(masodik))
+first = "FGHJKAERT"
+second = "HJKEORPD"
+print "Length of LCS is ", lcs(first , second, len(first), len(second))
