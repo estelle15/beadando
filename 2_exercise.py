@@ -26,16 +26,5 @@ def tizes_szamrendszerbe():
             a += 1
         return m_tiz
 
-    else:
-        s = x[::-1]
-        m_tiz = 0
-        j = 0
-
-        for i in s:
-            m_tiz += int(i)*(y**j)
-            j += 1
-
-        return m_tiz
-
  
   
