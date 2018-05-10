@@ -3,7 +3,6 @@ def convert(lista,b1,b2):
     helyiertek=1
     for i in range(len(lista)-1,-1,-1):
         if lista[i]>=b1:
-            print("Nem jó szám")
             return None
         szam+=lista[i]*helyiertek
         helyiertek*=b1
@@ -13,4 +12,6 @@ def convert(lista,b1,b2):
         szam//=b2
     lista2.reverse()
     return lista2
-print(convert([6,7,4],10,2))
+print(convert([0,1,1,0,0,1,1],2,10))
+print(convert([5,7,2],10,3))
+print(convert([9,5,4,4],10,16))
