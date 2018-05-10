@@ -8,8 +8,5 @@ def max_prime(number):
         return number
     return factor
 
-print max_prime(5)#5
-print max_prime(7)#7
-print max_prime(13)#13
-print max_prime(29)#29
+print max_prime(13195)#29
 print max_prime(600851475143)#6857
