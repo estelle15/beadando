@@ -12,6 +12,6 @@ def convert(lista,b1,b2):
         szam//=b2
     lista2.reverse()
     return lista2
-print(convert([0,1,1,0,0,1,1],2,10))
-print(convert([5,7,2],10,3))
-print(convert([9,5,4,4],10,16))
+print(convert([0,1,1,0,0,1,1],2,10)) #[5,1]
+print(convert([5,7,2],10,3))#[2,1,0,0,1,2]
+print(convert([9,5,4,4],10,16))#[2,5,4,8]
