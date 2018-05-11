@@ -2,10 +2,10 @@ elso= input("Első szó: ")
 masodik= input("Második szó: ")
 
 kozos=[]
-for i in range(0,len(first)):
-    for j in range(0,len(second)):
-        if first[i] == second[j] :
-            kozos.append(second[j])
+for i in range(0,len(elso)):
+    for j in range(0,len(masodik)):
+        if elso[i] == masodik[j] :
+            kozos.append(masodik[j])
 
 vegso=""
 for i in kozos:
